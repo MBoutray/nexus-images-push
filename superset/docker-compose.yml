@@ -1,0 +1,4 @@
+services:
+  superset:
+    image: apache/superset:4.1.1
+    container_name: test-nexus-tag_superset

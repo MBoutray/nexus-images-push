@@ -1,0 +1,11 @@
+services:
+  jupyter:
+    build:
+      context: .
+      args:
+        IMAGE_VERSION: ${IMAGE_VERSION}
+      tags:
+        - https://index.docker.io/v1/jupyter:latest
+        - https://index.docker.io/v1/jupyter:winnie
+    image: https://index.docker.io/v1/jupyter:${IMAGE_VERSION}
+    container_name: test-nexus-tag_jupyter
